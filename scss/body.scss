@@ -1,0 +1,198 @@
+.body {
+
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+background-color: #ececec;
+
+   &__block {
+max-width: 481px;
+max-height: 244px;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+background-color: #fff;
+border-bottom: solid 7px #51c03d;
+border-radius: 8px;
+z-index: 10;
+margin-left: 220px;
+position: relative;
+top: -80px;
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+  display: none;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   display: none;
+ }
+
+ @media (max-width: 575.98px) { 
+  display: none;
+ }
+   }
+
+   &__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding-top: 63px;
+
+      @media (max-width: 575.98px) { 
+        padding-top: 0;
+       }
+   }
+
+   &__icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 71px;
+      padding-bottom: 80px;
+
+      @media (min-width: 768px) and (max-width: 991.98px) { 
+         flex-direction: column;
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) { 
+         flex-direction: column;
+       }
+
+       @media (max-width: 575.98px) { 
+         flex-direction: column;
+         padding-top: 30px;
+       }
+   }
+}
+
+.block {
+
+   &__title {
+color: #868686;
+@include semilight;
+font-size: 22px;
+font-weight: 300;
+text-align: center;
+padding-top: 15px;
+   }
+
+   &__row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 27px 27px;
+      justify-content: center;
+      z-index: 10;
+   }
+}
+.row {
+
+   &__box {
+      margin-right: 6px;
+      margin-top: 10px;
+
+   }
+
+   &__img {
+      width: 100%;
+   }
+
+   &__title {
+      color: #929292;
+      font-family: "Segoe WP";
+      font-size: 14px;
+      font-weight: 300;
+      padding-top: 5px;
+   }
+}
+.description {
+
+   &__title {
+      color: #7e7c7c;
+      @include semilight;
+font-size: 26px;
+font-weight: 300;
+line-height: 34px;
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   font-size: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   font-size: 18px;
+ }
+
+ @media (max-width: 575.98px) { 
+   display: none;
+ }
+   }
+
+   &__subtitle {
+      color: #7e7c7c;
+@include semilight;
+font-size: 22px;
+font-weight: 300;
+line-height: 34px;
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+   font-size: 18px;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+   font-size: 15px;
+ }
+
+ @media (max-width: 575.98px) { 
+   display: none;
+ }
+   }
+}
+.icons {
+   
+
+   &__items {
+      margin-right: 80px;
+
+      @media (min-width: 768px) and (max-width: 991.98px) { 
+         margin-top: 30px;
+         margin-left: 70px;
+      }
+
+      @media (min-width: 576px) and (max-width: 767.98px) { 
+        margin-left: 80px;
+        margin-top: 40px;
+       }
+
+       @media (max-width: 575.98px) { 
+         margin-left: 80px;
+         margin-top: 40px;
+       }
+   }
+
+   &__img {
+
+      border: solid 1px #fff;
+      padding: 18px;
+      border-radius: 50%;
+      background-color: #fff;
+      
+   }
+
+   &__title {
+ text-align: center;
+      color: #7e7c7c;
+@include semilight;
+font-size: 20px;
+font-weight: 300;
+line-height: 34px;
+padding-top: 18px;
+   }
+}
+
+.serch {
+   padding: 33px;
+}
+
+.photo {
+   padding: 42px 29px;
+}
+
+.trash {
+   padding: 30px;
+}
