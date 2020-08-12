@@ -1,0 +1,439 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  src: url("../fonts/ofont.ru_Segoe WP SemiLight.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Segoe WP SemiLight.woff") format("woff"), url("../fonts/ofont.ru_Segoe WP SemiLight.ttf") format("truetype"), url("../fonts/ofont.ru_Segoe WP SemiLight.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_ofont.ru_Segoe WP Semibold";
+  src: url("../fonts/ofont.ru_Segoe WP Semibold.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Segoe WP Semibold.woff") format("woff"), url("../fonts/ofont.ru_Segoe WP Semibold.ttf") format("truetype"), url("../fonts/ofont.ru_Segoe WP Semibold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
+.container {
+  width: 980px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+    width: 720px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575.98px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  padding: 20px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.22);
+}
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .header__wrap {
+    justify-content: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .header__wrap {
+    justify-content: center;
+  }
+}
+.header__logo {
+  color: #8d8d8d;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 30px;
+  font-weight: 200;
+  line-height: 36px;
+}
+.header__logo span {
+  color: #1298dd;
+  font-family: "Conv_ofont.ru_Segoe WP Semibold";
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: -2.18px;
+  margin-right: 10px;
+}
+
+.menu__items {
+  display: flex;
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .menu__items {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .menu__items {
+    display: none;
+  }
+}
+.menu__item {
+  margin-right: 40px;
+  color: #676767;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.active {
+  box-shadow: inset 0 1px 0 rgba(136, 211, 251, 0.75);
+  border: 1px solid #1784d1;
+  background-image: linear-gradient(to top, #1f84e7 0%, #37b3f8 100%);
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5%;
+}
+
+.banner {
+  background: url("/img/header/bg.png") 0 0/100% no-repeat;
+  background-size: cover;
+  padding: 150px 0px 182px 0px;
+}
+.banner__description {
+  text-align: center;
+}
+.banner__title {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+  color: #ffffff;
+  font-family: "Conv_ofont.ru_Segoe WP Semibold";
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+@media (max-width: 575.98px) {
+  .banner__title {
+    font-size: 30px;
+  }
+}
+.banner__subtitle {
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.07);
+  color: #ffffff;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 48px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+@media (max-width: 575.98px) {
+  .banner__subtitle {
+    font-size: 25px;
+  }
+}
+.banner__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 45px;
+}
+.banner__btn a {
+  box-shadow: inset 0 1px 0 rgba(112, 243, 84, 0.75);
+  border: 6px solid rgba(0, 0, 0, 0.12);
+  border-radius: 14%;
+  background-color: #636363;
+  background-image: linear-gradient(to top, #34ae22 0%, #6ed258 100%);
+  padding: 15px 54px;
+}
+@media (max-width: 575.98px) {
+  .banner__btn a {
+    padding: 10px 20px;
+  }
+}
+.banner__btn span {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+  font-family: "Segoe WP";
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.body {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.11);
+  background-color: #ececec;
+}
+.body__block {
+  max-width: 481px;
+  max-height: 244px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-bottom: solid 7px #51c03d;
+  border-radius: 8px;
+  z-index: 10;
+  margin-left: 220px;
+  position: relative;
+  top: -80px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .body__block {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .body__block {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .body__block {
+    display: none;
+  }
+}
+.body__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 63px;
+}
+@media (max-width: 575.98px) {
+  .body__description {
+    padding-top: 0;
+  }
+}
+.body__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 71px;
+  padding-bottom: 80px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .body__icons {
+    flex-direction: column;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .body__icons {
+    flex-direction: column;
+  }
+}
+@media (max-width: 575.98px) {
+  .body__icons {
+    flex-direction: column;
+    padding-top: 30px;
+  }
+}
+
+.block__title {
+  color: #868686;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 22px;
+  font-weight: 300;
+  text-align: center;
+  padding-top: 15px;
+}
+.block__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 27px 27px;
+  justify-content: center;
+  z-index: 10;
+}
+
+.row__box {
+  margin-right: 6px;
+  margin-top: 10px;
+}
+.row__img {
+  width: 100%;
+}
+.row__title {
+  color: #929292;
+  font-family: "Segoe WP";
+  font-size: 14px;
+  font-weight: 300;
+  padding-top: 5px;
+}
+
+.description__title {
+  color: #7e7c7c;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 34px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .description__title {
+    font-size: 20px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .description__title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 575.98px) {
+  .description__title {
+    display: none;
+  }
+}
+.description__subtitle {
+  color: #7e7c7c;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 34px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .description__subtitle {
+    font-size: 18px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .description__subtitle {
+    font-size: 15px;
+  }
+}
+@media (max-width: 575.98px) {
+  .description__subtitle {
+    display: none;
+  }
+}
+
+.icons__items {
+  margin-right: 80px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .icons__items {
+    margin-top: 30px;
+    margin-left: 70px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .icons__items {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 575.98px) {
+  .icons__items {
+    margin-left: 80px;
+    margin-top: 40px;
+  }
+}
+.icons__img {
+  border: solid 1px #fff;
+  padding: 18px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.icons__title {
+  text-align: center;
+  color: #7e7c7c;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 34px;
+  padding-top: 18px;
+}
+
+.serch {
+  padding: 33px;
+}
+
+.photo {
+  padding: 42px 29px;
+}
+
+.trash {
+  padding: 30px;
+}
+
+.footer {
+  background-color: #414141;
+  padding: 8px 0;
+}
+.footer__title {
+  text-align: center;
+  opacity: 0.5;
+  color: #ffffff;
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  font-size: 14px;
+  font-weight: 300;
+}

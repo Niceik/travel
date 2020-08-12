@@ -1,0 +1,15 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Conv_ofont.ru_Segoe WP SemiLight";
+  src: url("../fonts/ofont.ru_Segoe WP SemiLight.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Segoe WP SemiLight.woff") format("woff"), url("../fonts/ofont.ru_Segoe WP SemiLight.ttf") format("truetype"), url("../fonts/ofont.ru_Segoe WP SemiLight.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Conv_ofont.ru_Segoe WP Semibold";
+  src: url("../fonts/ofont.ru_Segoe WP Semibold.eot");
+  src: local("☺"), url("../fonts/ofont.ru_Segoe WP Semibold.woff") format("woff"), url("../fonts/ofont.ru_Segoe WP Semibold.ttf") format("truetype"), url("../fonts/ofont.ru_Segoe WP Semibold.svg") format("svg");
+  font-weight: 600;
+  font-style: normal;
+}
